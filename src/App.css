@@ -1,38 +1,228 @@
-.App {
-  text-align: center;
+/* Reset Básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Estilo geral */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url('./img/fundo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #f0f0f0;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Container geral */
+.vendas-compras-history,
+.cadastro-fornecedores-form,
+.form-cadastro,
+.veiculos-form,
+.relatorio-form,
+.estoque-container,
+.estoque-form,
+.component-container,
+.component-form,
+.historico-servicos,
+.historico-form,
+.cadastros-container,
+.cadastro-form,
+.vendas-compras-container,
+.vendas-compras-form,
+.cadastro-fornecedores-form {
   display: flex;
   flex-direction: column;
+  align-items: center; /* Centraliza horizontalmente o formulário */
+  justify-content: flex-start; /* Alinha os itens no topo */
+  height: 100%; /* Garante altura total do container */
+  padding: 3rem 2rem;
+  background: rgba(0, 0, 0, 0.7); /* Fundo com opacidade */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Formulário */
+label {
+  display: block;
+  margin-bottom: 0.75rem; /* Aumenta o espaço entre o label e o input */
+  font-weight: 600;
+  text-align: left; /* Alinha os labels à esquerda dentro do formulário */
+  color: #ddd; /* Cor do texto do label */
+  font-size: 1.1rem;
+}
+
+/* Inputs e selects */
+input,
+select {
+  width: 100%; /* Ocupa toda a largura disponível */
+  max-width: 420px; /* Limita a largura */
+  padding: 0.9rem;
+  margin-bottom: 1rem; /* Aumenta o espaço entre os inputs */
+  font-size: 1rem;
+  border: 2px solid #bbb;
+  border-radius: 8px;
+  outline: none;
+  background-color: #333;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.4);
+}
+
+/* Botões */
+button {
+  background-color: #3f3f3f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #00796b;
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: #004d40;
+}
+
+/* Tabelas e listas */
+.vendas-compras-list,
+.vendas-compras-history {
+  margin-top: 2rem;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #444;
+}
+
+th {
+  background-color: #444;
+  color: #fff;
+}
+
+tr:hover {
+  background-color: rgba(76, 175, 80, 0.1);
+}
+
+/* Formulario de cadastro */
+.form-cadastro {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+}
+
+header {
+  background-color: #212121;
   color: white;
+  padding: 1.5rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
 
-.App-link {
-  color: #61dafb;
+header nav {
+  display: flex;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.tab-list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.tab-item {
+  cursor: pointer;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+  background-color: transparent;
+  border: 2px solid transparent;
+}
+
+.tab-item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.tab-item.active {
+  background-color: #263238;
+  color: #81c784;
+  border: 2px solid #81c784;
+}
+
+main {
+  max-width: 950px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: rgba(33, 33, 33, 0.9);
+  border-radius: 12px;
+  color: #f5f5f5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.tab-content {
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Textarea */
+textarea {
+  width: 100%;
+  height: 80px;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 2px solid #444;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  background-color: #333;
+  color: #fff;
+}
+
+textarea:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.4);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .tab-list {
+    flex-wrap: wrap;
+    gap: 1rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .tab-item {
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+  }
+
+  main {
+    margin: 1rem;
+    padding: 1.5rem;
   }
 }
