@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/gestao-de-carros-tonhao/static/css/main.ff9f45bb.css",
-    "main.js": "/gestao-de-carros-tonhao/static/js/main.97b59145.js",
-    "static/js/453.17b1ed23.chunk.js": "/gestao-de-carros-tonhao/static/js/453.17b1ed23.chunk.js",
-    "static/media/fundo.png": "/gestao-de-carros-tonhao/static/media/fundo.b3d3e173962430792e32.png",
-    "index.html": "/gestao-de-carros-tonhao/index.html",
-    "main.ff9f45bb.css.map": "/gestao-de-carros-tonhao/static/css/main.ff9f45bb.css.map",
-    "main.97b59145.js.map": "/gestao-de-carros-tonhao/static/js/main.97b59145.js.map",
-    "453.17b1ed23.chunk.js.map": "/gestao-de-carros-tonhao/static/js/453.17b1ed23.chunk.js.map"
+    "main.css": "/gestao-de-carros-carlos/static/css/main.04bed0ef.css",
+    "main.js": "/gestao-de-carros-carlos/static/js/main.5d020581.js",
+    "static/js/453.17b1ed23.chunk.js": "/gestao-de-carros-carlos/static/js/453.17b1ed23.chunk.js",
+    "static/media/fundo.png": "/gestao-de-carros-carlos/static/media/fundo.b3d3e173962430792e32.png",
+    "index.html": "/gestao-de-carros-carlos/index.html",
+    "main.04bed0ef.css.map": "/gestao-de-carros-carlos/static/css/main.04bed0ef.css.map",
+    "main.5d020581.js.map": "/gestao-de-carros-carlos/static/js/main.5d020581.js.map",
+    "453.17b1ed23.chunk.js.map": "/gestao-de-carros-carlos/static/js/453.17b1ed23.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff9f45bb.css",
-    "static/js/main.97b59145.js"
+    "static/css/main.04bed0ef.css",
+    "static/js/main.5d020581.js"
   ]
 }
